@@ -1,15 +1,15 @@
 // 9-try.js
 
-export default function mathFunction(guardrail) {
+function guardrail(mathFunction) {
   const queue = [];
   try {
-    const x = guardrail();
-    queue.push(x);
-  } catch (err) {
-    queue.push(`${err.name}: ${err.message}`);
-  } finally {
-    queue.push('Guardrail was processed');
+    const value = mathFunction();
+    queue.push(value);
+  } catch (error) {
+    queue.push(error.toString());
   }
-
+  queue.push('Guardrail was processed');
   return queue;
 }
+
+export default guardrail;

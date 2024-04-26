@@ -12,7 +12,7 @@ class Car {
     this._color = color;
 
     // eslint-disable-next-line no-underscore-dangle
-    this[_carInstance] = this.constructor;
+    this[_carInstance] = this.__proto__.constructor;
   }
 
   cloneCar() {

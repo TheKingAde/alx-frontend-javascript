@@ -8,7 +8,7 @@ class EVCar extends Car {
     this._range = range;
   }
 
-    // Override the cloneCar method to return an instance of Car
+  // Override the cloneCar method to return an instance of Car
   cloneCar() {
     // eslint-disable-next-line no-underscore-dangle
     return new Car(this._brand, this._motor, this._color);

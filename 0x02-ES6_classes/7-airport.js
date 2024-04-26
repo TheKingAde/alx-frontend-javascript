@@ -24,6 +24,11 @@ class Airport {
     // eslint-disable-next-line no-underscore-dangle
     return `Airport [${this._code}]`;
   }
+
+  valueOf() {
+    // eslint-disable-next-line no-underscore-dangle
+    return this._code;
+  }
 }
 
 export default Airport;
